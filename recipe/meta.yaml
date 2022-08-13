@@ -9,17 +9,18 @@ source:
   sha256: 7f22bb9f59e36551f5d7640d265b63ec6af1a91a421fa220dd913a5a134e9901
   patches:
     # https://github.com/Syllo/nvtop/pull/154
-    - 154-link_rt.patch
+    # - 154-link_rt.patch
     - amd_syscall_definitions.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - sysroot_linux-64 2.17  # [linux64]
     - cmake
     - make
   host:
