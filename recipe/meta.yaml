@@ -26,6 +26,7 @@ requirements:
   host:
     - ncurses
     - libdrm
+    - libsystemd
 
 test:
   commands:
