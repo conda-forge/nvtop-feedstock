@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: nvtop
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Syllo/nvtop/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f7da9eb85a4df6bd6a2d8afd47ae901755106c4ff7f63cd1df61a702f85f7027
+  sha256: f61ecbe3a30a216706c16fc177d3b840e7d7deccf87b048d59f95f230d591a53
   patches:
     # https://github.com/Syllo/nvtop/pull/154
     # - 154-link_rt.patch
