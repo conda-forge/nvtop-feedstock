@@ -25,6 +25,7 @@ requirements:
     - make
   host:
     - ncurses
+    - libdrm
     - libsystemd
 
 test:
