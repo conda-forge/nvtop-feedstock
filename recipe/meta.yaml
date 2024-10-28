@@ -12,20 +12,20 @@ source:
     - remove_kcmp.patch
 
 build:
-  number: 0
-  skip: true  # [not linux]
+  number: 1
+  skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - sysroot_linux-64 2.17  # [linux64]
+    - {{ stdlib('c') }}
     - cmake
     - make
   host:
     - ncurses
-    - libdrm
-    - libsystemd
+    - libdrm  # [linux]
+    - libsystemd  # [linux]
 
 test:
   commands:
