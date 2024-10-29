@@ -9,8 +9,7 @@ Package license: GPL-3.0-only
 
 Summary: Neat Videocard TOP
 
-A (h)top like task monitor for AMD and NVIDIA GPUs. It can handle multiple
-GPUs and print information about them in a htop familiar way.
+A (h)top like task monitor for GPUs and accelerators. It can handle multiple GPUs and print information about them in a htop-familiar way.
 
 
 Current build status
