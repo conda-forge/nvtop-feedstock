@@ -29,7 +29,8 @@ requirements:
 
 test:
   commands:
-    - nvtop --help
+    - test -f $PREFIX/bin/nvtop
+    - nvtop --help  # [build_platform == target_platform]
 
 about:
   home: https://github.com/Syllo/nvtop
