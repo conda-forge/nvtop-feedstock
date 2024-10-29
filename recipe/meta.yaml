@@ -30,7 +30,7 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/bin/nvtop
-    - nvtop --help  # [build_platform == target_platform]
+    - nvtop --help  # [not (osx and arm64)]
 
 about:
   home: https://github.com/Syllo/nvtop
