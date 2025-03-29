@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: nvtop
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/Syllo/nvtop/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 9481c45c136163574f1f16d87789859430bc90a1dc62f181b269b5edd92f01f3
+  sha256: d26df685455023cedc4dda033862dcddb67402fbdb685da70da78492f73c41d0
   patches:
     # https://github.com/Syllo/nvtop/pull/272
     - remove_kcmp.patch
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
