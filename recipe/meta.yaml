@@ -1,4 +1,4 @@
-{% set version = "3.3.2" %}
+{% set version = "3.4.0" %}
 
 package:
   name: nvtop
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Syllo/nvtop/archive/refs/tags/{{ version }}.tar.gz
-  sha256: bfcf24a4bbc763c92a630900f1679f05cce3c9d5f4d1f4a95bdb9230ef562665
+  sha256: 7979f425dc2b748ff191e3999a0994af6154795e0e8640fae1e177684a296e08
 
 build:
   number: 0
